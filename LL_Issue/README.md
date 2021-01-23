@@ -16,3 +16,4 @@ One of the junk address out of local array of pointers storing the addresses tra
 The fix was very simple. We need to initaillize the array of pointers of addressess traversed with NULL. Either initailize them with static or with calloc call or simply use default value {0} for initialization.
 
 ![alt Mesh Topology Result of 6 nodes](https://raw.githubusercontent.com/thewitking/bugs/main/LL_Issue/afterFix.png)
+
