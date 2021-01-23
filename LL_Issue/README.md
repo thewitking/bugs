@@ -17,3 +17,5 @@ The fix was very simple. We need to initaillize the array of pointers of address
 
 ![alt Mesh Topology Result of 6 nodes](https://raw.githubusercontent.com/thewitking/bugs/main/LL_Issue/afterFix.png)
 
+## Improvement note:
+The size of array of visited address could be fixated to the number of nodes created using some static kind of global variable. coding sturcture could have been improved more with better formatted coding. But the attached code here is the same replica that i encounterd bug with. Other method could use hashing and even pointers or changing the structure. All in all, the common method uses the reference address of earlier visited node to check with current node. 
