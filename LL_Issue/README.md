@@ -8,7 +8,6 @@ While detecting a loop in a LL using addresses memory of traversed addressess, a
 
 One of the junk address out of local array of pointers storing the addresses traversed in Linked list had the garbage value matching the current node this indicated that the current node has been explored earlier and thus the function mentioned above returned a true status.
 
-I suspect the junk address might got 
 
 # Fix:
 
