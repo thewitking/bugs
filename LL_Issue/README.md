@@ -11,4 +11,4 @@ One of the junk address out of local array of pointers storing the addresses tra
 
 # Fix:
 
-The fix was very simple. We need to initaillize the array of pointers of addressess travered with NULL. Either initailize them with static or with calloc call or simply use default value for initialization.
+The fix was very simple. We need to initaillize the array of pointers of addressess traversed with NULL. Either initailize them with static or with calloc call or simply use default value {0} for initialization.
