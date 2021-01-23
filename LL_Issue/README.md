@@ -2,13 +2,13 @@
 
 # Issue: 
 
-While detecting a loop in a LL using addresses memory of travered addressess, a function <span style="color:red;">int detectLoop(LL *Head)</span> was returing true status indicating that the address was already visited even though when we had no loop in LL. Issue was with a local array of pointers storing the addressess traversed in Linked list.
+While detecting a loop in a LL using addresses memory of traversed addressess, a function "int detectLoop(LL *Head)" was returing true status indicating that the address was already visited even though when we had no loop in LL. Issue was with a local array of pointers storing the addressess traversed in Linked list.
 
 # Root cause: 
 
-One of the junk address out of local array of pointers storing the addressess traveeresd in Linked list had the garbage value matching the previously exited routine having the same address of node
+One of the junk address out of local array of pointers storing the addresses traversed in Linked list had the garbage value matching the current node this indicated that the current node has been explored earlier and thus the function mentioned above returned a true status.
 
-I suspect the garbage value retained in the stack area was the root cause of it.
+I suspect the junk address might got 
 
 # Fix:
 
