@@ -2,7 +2,7 @@
 
 # Issue: 
 
-While detecting a loop in a LL using addresses memory of traversed addressess, a function "int detectLoop(LL *Head)" was returing true status indicating that the address was already visited even though when we had no loop in LL. Issue was with a local array of pointers storing the addressess traversed in Linked list.
+While detecting a loop in a LL using addresses memory of traversed addressess, a function "int detectLoop(LL *Head)" was returning true status indicating that the address was already visited even though when we had no loop in LL. Issue was with a local array of pointers storing the addressess traversed in Linked list.
 
 # Root cause: 
 
